@@ -1,9 +1,11 @@
 import './Track.css'
 import React from 'react'
+import Navbar from './components/Navbar'
 
 const Track = () => {
   return (
-    <div>Track</div>
+    <div>Track your progress</div>
+ 
   )
 }
 

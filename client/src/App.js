@@ -11,12 +11,14 @@ import Home from './Home';
 import Goals from './Goals';
 import Create from './Create';
 import Track from './Track';
+import Emoji from './Emoji';
 
 
 function App() {
 
   return (
     <div className="App">
+      <Emoji />
       <Router>
       <nav>
           <Link to="/">Home</Link>
@@ -28,6 +30,7 @@ function App() {
 
           <Route path="/" element={<Home />} />
           <Route path="/Goals" element={<Goals />} />
+          <Route path="/Create" element={<Create />} />
           <Route path="/Track" element={<Track />} />
 
         </Routes>
