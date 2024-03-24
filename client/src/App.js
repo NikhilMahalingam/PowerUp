@@ -9,6 +9,9 @@ import {
 import './App.css';
 import Home from './Home';
 import Goals from './Goals';
+import Create from './Create';
+import Track from './Track';
+
 
 function App() {
 
@@ -18,13 +21,17 @@ function App() {
       <nav>
           <Link to="/">Home</Link>
           <Link to="/Goals">Goals</Link>
+          <Link to="/Create">Create</Link>
+          <Link to="/Track">Track</Link>
       </nav>
       <Routes>
 
           <Route path="/" element={<Home />} />
           <Route path="/Goals" element={<Goals />} />
+          <Route path="/Track" element={<Track />} />
 
         </Routes>
+        
       </Router>
     </div>
   );
